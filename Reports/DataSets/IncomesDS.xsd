@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IncomesDS" targetNamespace="http://tempuri.org/IncomesDS.xsd" xmlns:mstns="http://tempuri.org/IncomesDS.xsd" xmlns="http://tempuri.org/IncomesDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IncomesDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IncomesDS" msprop:Generator_UserDSName="IncomesDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IncomesResposeDT" msprop:Generator_TableClassName="IncomesResposeDTDataTable" msprop:Generator_TableVarName="tableIncomesResposeDT" msprop:Generator_TablePropName="IncomesResposeDT" msprop:Generator_RowDeletingName="IncomesResposeDTRowDeleting" msprop:Generator_RowChangingName="IncomesResposeDTRowChanging" msprop:Generator_RowEvHandlerName="IncomesResposeDTRowChangeEventHandler" msprop:Generator_RowDeletedName="IncomesResposeDTRowDeleted" msprop:Generator_UserTableName="IncomesResposeDT" msprop:Generator_RowChangedName="IncomesResposeDTRowChanged" msprop:Generator_RowEvArgName="IncomesResposeDTRowChangeEvent" msprop:Generator_RowClassName="IncomesResposeDTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="crop" msprop:Generator_ColumnVarNameInTable="columncrop" msprop:Generator_ColumnPropNameInRow="crop" msprop:Generator_ColumnPropNameInTable="cropColumn" msprop:Generator_UserColumnName="crop" type="xs:string" minOccurs="0" />
+              <xs:element name="income" msprop:Generator_ColumnVarNameInTable="columnincome" msprop:Generator_ColumnPropNameInRow="income" msprop:Generator_ColumnPropNameInTable="incomeColumn" msprop:Generator_UserColumnName="income" type="xs:string" minOccurs="0" />
+              <xs:element name="costPlant" msprop:Generator_ColumnVarNameInTable="columncostPlant" msprop:Generator_ColumnPropNameInRow="costPlant" msprop:Generator_ColumnPropNameInTable="costPlantColumn" msprop:Generator_UserColumnName="costPlant" type="xs:string" minOccurs="0" />
+              <xs:element name="costTrans" msprop:Generator_ColumnVarNameInTable="columncostTrans" msprop:Generator_ColumnPropNameInRow="costTrans" msprop:Generator_ColumnPropNameInTable="costTransColumn" msprop:Generator_UserColumnName="costTrans" type="xs:string" minOccurs="0" />
+              <xs:element name="costLog" msprop:Generator_ColumnVarNameInTable="columncostLog" msprop:Generator_ColumnPropNameInRow="costLog" msprop:Generator_ColumnPropNameInTable="costLogColumn" msprop:Generator_UserColumnName="costLog" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

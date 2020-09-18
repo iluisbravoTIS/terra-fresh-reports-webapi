@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LaborDS" targetNamespace="http://tempuri.org/LaborDS.xsd" xmlns:mstns="http://tempuri.org/LaborDS.xsd" xmlns="http://tempuri.org/LaborDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LaborDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="LaborDS" msprop:Generator_UserDSName="LaborDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LaborResponseDT" msprop:Generator_TableClassName="LaborResponseDTDataTable" msprop:Generator_TableVarName="tableLaborResponseDT" msprop:Generator_TablePropName="LaborResponseDT" msprop:Generator_RowDeletingName="LaborResponseDTRowDeleting" msprop:Generator_RowChangingName="LaborResponseDTRowChanging" msprop:Generator_RowEvHandlerName="LaborResponseDTRowChangeEventHandler" msprop:Generator_RowDeletedName="LaborResponseDTRowDeleted" msprop:Generator_UserTableName="LaborResponseDT" msprop:Generator_RowChangedName="LaborResponseDTRowChanged" msprop:Generator_RowEvArgName="LaborResponseDTRowChangeEvent" msprop:Generator_RowClassName="LaborResponseDTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="weeks" msprop:Generator_ColumnVarNameInTable="columnweeks" msprop:Generator_ColumnPropNameInRow="weeks" msprop:Generator_ColumnPropNameInTable="weeksColumn" msprop:Generator_UserColumnName="weeks" type="xs:string" minOccurs="0" />
+              <xs:element name="dateRange" msprop:Generator_ColumnVarNameInTable="columndateRange" msprop:Generator_ColumnPropNameInRow="dateRange" msprop:Generator_ColumnPropNameInTable="dateRangeColumn" msprop:Generator_UserColumnName="dateRange" type="xs:string" minOccurs="0" />
+              <xs:element name="totalLaborRequired" msprop:Generator_ColumnVarNameInTable="columntotalLaborRequired" msprop:Generator_ColumnPropNameInRow="totalLaborRequired" msprop:Generator_ColumnPropNameInTable="totalLaborRequiredColumn" msprop:Generator_UserColumnName="totalLaborRequired" type="xs:string" minOccurs="0" />
+              <xs:element name="laborHired" msprop:Generator_ColumnVarNameInTable="columnlaborHired" msprop:Generator_ColumnPropNameInRow="laborHired" msprop:Generator_ColumnPropNameInTable="laborHiredColumn" msprop:Generator_UserColumnName="laborHired" type="xs:string" minOccurs="0" />
+              <xs:element name="laborFired" msprop:Generator_ColumnVarNameInTable="columnlaborFired" msprop:Generator_ColumnPropNameInRow="laborFired" msprop:Generator_ColumnPropNameInTable="laborFiredColumn" msprop:Generator_UserColumnName="laborFired" type="xs:string" minOccurs="0" />
+              <xs:element name="permanentLaborAvailable" msprop:Generator_ColumnVarNameInTable="columnpermanentLaborAvailable" msprop:Generator_ColumnPropNameInRow="permanentLaborAvailable" msprop:Generator_ColumnPropNameInTable="permanentLaborAvailableColumn" msprop:Generator_UserColumnName="permanentLaborAvailable" type="xs:string" minOccurs="0" />
+              <xs:element name="temporaryLaborHired" msprop:Generator_ColumnVarNameInTable="columntemporaryLaborHired" msprop:Generator_ColumnPropNameInRow="temporaryLaborHired" msprop:Generator_ColumnPropNameInTable="temporaryLaborHiredColumn" msprop:Generator_UserColumnName="temporaryLaborHired" type="xs:string" minOccurs="0" />
+              <xs:element name="totalLaborAvailable" msprop:Generator_ColumnVarNameInTable="columntotalLaborAvailable" msprop:Generator_ColumnPropNameInRow="totalLaborAvailable" msprop:Generator_ColumnPropNameInTable="totalLaborAvailableColumn" msprop:Generator_UserColumnName="totalLaborAvailable" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LaborResponseDT2" msprop:Generator_TableClassName="LaborResponseDT2DataTable" msprop:Generator_TableVarName="tableLaborResponseDT2" msprop:Generator_TablePropName="LaborResponseDT2" msprop:Generator_RowDeletingName="LaborResponseDT2RowDeleting" msprop:Generator_RowChangingName="LaborResponseDT2RowChanging" msprop:Generator_RowEvHandlerName="LaborResponseDT2RowChangeEventHandler" msprop:Generator_RowDeletedName="LaborResponseDT2RowDeleted" msprop:Generator_UserTableName="LaborResponseDT2" msprop:Generator_RowChangedName="LaborResponseDT2RowChanged" msprop:Generator_RowEvArgName="LaborResponseDT2RowChangeEvent" msprop:Generator_RowClassName="LaborResponseDT2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="weeks" msprop:Generator_ColumnVarNameInTable="columnweeks" msprop:Generator_ColumnPropNameInRow="weeks" msprop:Generator_ColumnPropNameInTable="weeksColumn" msprop:Generator_UserColumnName="weeks" type="xs:string" minOccurs="0" />
+              <xs:element name="dateRange" msprop:Generator_ColumnVarNameInTable="columndateRange" msprop:Generator_ColumnPropNameInRow="dateRange" msprop:Generator_ColumnPropNameInTable="dateRangeColumn" msprop:Generator_UserColumnName="dateRange" type="xs:string" minOccurs="0" />
+              <xs:element name="labors" msdata:Caption="requiredWorkers" msprop:Generator_ColumnVarNameInTable="columnlabors" msprop:Generator_ColumnPropNameInRow="labors" msprop:Generator_ColumnPropNameInTable="laborsColumn" msprop:Generator_UserColumnName="labors" type="xs:string" minOccurs="0" />
+              <xs:element name="laborType" msdata:Caption="temporalHireWorkers" msprop:Generator_ColumnVarNameInTable="columnlaborType" msprop:Generator_ColumnPropNameInRow="laborType" msprop:Generator_ColumnPropNameInTable="laborTypeColumn" msprop:Generator_UserColumnName="laborType" type="xs:string" minOccurs="0" />
+              <xs:element name="dateInit" msprop:Generator_ColumnVarNameInTable="columndateInit" msprop:Generator_ColumnPropNameInRow="dateInit" msprop:Generator_ColumnPropNameInTable="dateInitColumn" msprop:Generator_UserColumnName="dateInit" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HarvestDS" targetNamespace="http://tempuri.org/HarvestDS.xsd" xmlns:mstns="http://tempuri.org/HarvestDS.xsd" xmlns="http://tempuri.org/HarvestDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HarvestDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="HarvestDS" msprop:Generator_UserDSName="HarvestDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="HarvestResponseDT" msprop:Generator_TableClassName="HarvestResponseDTDataTable" msprop:Generator_TableVarName="tableHarvestResponseDT" msprop:Generator_RowChangedName="HarvestResponseDTRowChanged" msprop:Generator_TablePropName="HarvestResponseDT" msprop:Generator_RowDeletingName="HarvestResponseDTRowDeleting" msprop:Generator_RowChangingName="HarvestResponseDTRowChanging" msprop:Generator_RowEvHandlerName="HarvestResponseDTRowChangeEventHandler" msprop:Generator_RowDeletedName="HarvestResponseDTRowDeleted" msprop:Generator_RowClassName="HarvestResponseDTRow" msprop:Generator_UserTableName="HarvestResponseDT" msprop:Generator_RowEvArgName="HarvestResponseDTRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pounds" msprop:Generator_ColumnVarNameInTable="columnpounds" msprop:Generator_ColumnPropNameInRow="pounds" msprop:Generator_ColumnPropNameInTable="poundsColumn" msprop:Generator_UserColumnName="pounds" type="xs:string" minOccurs="0" />
+              <xs:element name="crops" msprop:Generator_ColumnVarNameInTable="columncrops" msprop:Generator_ColumnPropNameInRow="crops" msprop:Generator_ColumnPropNameInTable="cropsColumn" msprop:Generator_UserColumnName="crops" type="xs:string" minOccurs="0" />
+              <xs:element name="weeks" msprop:Generator_ColumnVarNameInTable="columnweeks" msprop:Generator_ColumnPropNameInRow="weeks" msprop:Generator_ColumnPropNameInTable="weeksColumn" msprop:Generator_UserColumnName="weeks" type="xs:string" minOccurs="0" />
+              <xs:element name="dateRange" msprop:Generator_ColumnVarNameInTable="columndateRange" msprop:Generator_ColumnPropNameInRow="dateRange" msprop:Generator_ColumnPropNameInTable="dateRangeColumn" msprop:Generator_UserColumnName="dateRange" type="xs:string" minOccurs="0" />
+              <xs:element name="dateInit" msprop:Generator_ColumnVarNameInTable="columndateInit" msprop:Generator_ColumnPropNameInRow="dateInit" msprop:Generator_ColumnPropNameInTable="dateInitColumn" msprop:Generator_UserColumnName="dateInit" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

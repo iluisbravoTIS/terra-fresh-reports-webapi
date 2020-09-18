@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CropsToOptimizeDataSet" targetNamespace="http://tempuri.org/CropsToOptimizeDataSet.xsd" xmlns:mstns="http://tempuri.org/CropsToOptimizeDataSet.xsd" xmlns="http://tempuri.org/CropsToOptimizeDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CropsToOptimizeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CropsToOptimizeDataSet" msprop:Generator_UserDSName="CropsToOptimizeDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CropsToOptimizeResponseDT" msprop:Generator_TableClassName="CropsToOptimizeResponseDTDataTable" msprop:Generator_TableVarName="tableCropsToOptimizeResponseDT" msprop:Generator_TablePropName="CropsToOptimizeResponseDT" msprop:Generator_RowDeletingName="CropsToOptimizeResponseDTRowDeleting" msprop:Generator_RowChangingName="CropsToOptimizeResponseDTRowChanging" msprop:Generator_RowEvHandlerName="CropsToOptimizeResponseDTRowChangeEventHandler" msprop:Generator_RowDeletedName="CropsToOptimizeResponseDTRowDeleted" msprop:Generator_UserTableName="CropsToOptimizeResponseDT" msprop:Generator_RowChangedName="CropsToOptimizeResponseDTRowChanged" msprop:Generator_RowEvArgName="CropsToOptimizeResponseDTRowChangeEvent" msprop:Generator_RowClassName="CropsToOptimizeResponseDTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ccrop" msprop:Generator_ColumnVarNameInTable="columnccrop" msprop:Generator_ColumnPropNameInRow="ccrop" msprop:Generator_ColumnPropNameInTable="ccropColumn" msprop:Generator_UserColumnName="ccrop" type="xs:string" minOccurs="0" />
+              <xs:element name="cplant" msprop:Generator_ColumnVarNameInTable="columncplant" msprop:Generator_ColumnPropNameInRow="cplant" msprop:Generator_ColumnPropNameInTable="cplantColumn" msprop:Generator_UserColumnName="cplant" type="xs:string" minOccurs="0" />
+              <xs:element name="crop" msprop:Generator_ColumnVarNameInTable="columncrop" msprop:Generator_ColumnPropNameInRow="crop" msprop:Generator_ColumnPropNameInTable="cropColumn" msprop:Generator_UserColumnName="crop" type="xs:string" minOccurs="0" />
+              <xs:element name="dharv" msprop:Generator_ColumnVarNameInTable="columndharv" msprop:Generator_ColumnPropNameInRow="dharv" msprop:Generator_ColumnPropNameInTable="dharvColumn" msprop:Generator_UserColumnName="dharv" type="xs:string" minOccurs="0" />
+              <xs:element name="labh" msprop:Generator_ColumnVarNameInTable="columnlabh" msprop:Generator_ColumnPropNameInRow="labh" msprop:Generator_ColumnPropNameInTable="labhColumn" msprop:Generator_UserColumnName="labh" type="xs:string" minOccurs="0" />
+              <xs:element name="labp" msprop:Generator_ColumnVarNameInTable="columnlabp" msprop:Generator_ColumnPropNameInRow="labp" msprop:Generator_ColumnPropNameInTable="labpColumn" msprop:Generator_UserColumnName="labp" type="xs:string" minOccurs="0" />
+              <xs:element name="maxl" msprop:Generator_ColumnVarNameInTable="columnmaxl" msprop:Generator_ColumnPropNameInRow="maxl" msprop:Generator_ColumnPropNameInTable="maxlColumn" msprop:Generator_UserColumnName="maxl" type="xs:string" minOccurs="0" />
+              <xs:element name="minl" msprop:Generator_ColumnVarNameInTable="columnminl" msprop:Generator_ColumnPropNameInRow="minl" msprop:Generator_ColumnPropNameInTable="minlColumn" msprop:Generator_UserColumnName="minl" type="xs:string" minOccurs="0" />
+              <xs:element name="pslav" msprop:Generator_ColumnVarNameInTable="columnpslav" msprop:Generator_ColumnPropNameInRow="pslav" msprop:Generator_ColumnPropNameInTable="pslavColumn" msprop:Generator_UserColumnName="pslav" type="xs:string" minOccurs="0" />
+              <xs:element name="water" msprop:Generator_ColumnVarNameInTable="columnwater" msprop:Generator_ColumnPropNameInRow="water" msprop:Generator_ColumnPropNameInTable="waterColumn" msprop:Generator_UserColumnName="water" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
