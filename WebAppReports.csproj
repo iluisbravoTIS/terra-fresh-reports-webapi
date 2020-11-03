@@ -195,6 +195,8 @@
     <Compile Include="Models\DocumentResponseModel.cs" />
     <Compile Include="Models\HarvestResult.cs" />
     <Compile Include="Models\IncomeCostModel.cs" />
+    <Compile Include="Models\LocationModel.cs" />
+    <Compile Include="Models\Model1Request.cs" />
     <Compile Include="Models\ModelResult.cs" />
     <Compile Include="Models\OperatorsResult.cs" />
     <Compile Include="Models\PlantResult.cs" />

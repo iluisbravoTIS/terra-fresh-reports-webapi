@@ -17,7 +17,7 @@ namespace WebAppReports.Services
         public byte[] GenerateReportAsync(ModelResultResponse modelResult)
         {
             DataSet ds = new DataSet();
-            ds.Tables.Add(JsonConvert.DeserializeObject<DataTable>(JsonConvert.SerializeObject(modelResult.objToOtpimize)));
+            ds.Tables.Add(JsonConvert.DeserializeObject<DataTable>(JsonConvert.SerializeObject(modelResult.objToOtpimize.cropsSelected)));
             ReportDataSource rds1 = new ReportDataSource { Name = "CropsToOptimizeDataSet", Value = ds.Tables[0] };
 
             ds = new DataSet();
@@ -43,13 +43,16 @@ namespace WebAppReports.Services
 
             List<string> cropsSelected = new List<string>();
 
-            foreach (CropsConfigurationModel crop in modelResult.objToOtpimize)
+            foreach (CropsConfigurationModel crop in modelResult.objToOtpimize.cropsSelected)
             {
                 cropsSelected.Add(crop.crop);
             }
 
+            string locationSelected = modelResult.objToOtpimize.locationSelected.location;
+
             ReportParameter[] parametros =
             {
+                new ReportParameter("locationSelected", locationSelected),
                 new ReportParameter("cropsSelected", String.Join(", ", cropsSelected)),
                 new ReportParameter("incomes", modelResult.incomeCostResult.incomes.ToString()),
                 new ReportParameter("plantingCost", modelResult.incomeCostResult.plantCost.ToString()),

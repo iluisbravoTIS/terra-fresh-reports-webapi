@@ -458,7 +458,7 @@ Fields!crops.Value = "Green Beans", "#e8c37d",
 Fields!crops.Value = "Cucumber", "#7dbae8",
 Fields!crops.Value = "Celery", "#7de8d3",
 Fields!crops.Value = "Tomato", "#e8927d",
-Fields!crops.Value = "Coliflower", "#e8927d",
+Fields!crops.Value = "Cauliflower", "#7de8a8",
 Fields!crops.Value = "Bell Pepper", "#e87d7d",
 Fields!crops.Value = "Lettuce", "#897de8",
 True , "Gray"
@@ -1329,7 +1329,7 @@ Fields!crops.Value = "Green Beans", "#e8c37d",
 Fields!crops.Value = "Cucumber", "#7dbae8",
 Fields!crops.Value = "Celery", "#7de8d3",
 Fields!crops.Value = "Tomato", "#e8927d",
-Fields!crops.Value = "Coliflower", "#e8927d",
+Fields!crops.Value = "Cauliflower", "#7de8a8",
 Fields!crops.Value = "Bell Pepper", "#e87d7d",
 Fields!crops.Value = "Lettuce", "#897de8",
 True , "Gray"
@@ -3169,7 +3169,7 @@ True , "Gray"
                         </Style>
                       </TextRun>
                       <TextRun>
-                        <Value>Phoenix, AZ</Value>
+                        <Value>=Parameters!locationSelected.Value</Value>
                         <Style>
                           <FontFamily>segoe ui</FontFamily>
                           <FontSize>12pt</FontSize>
@@ -5217,7 +5217,7 @@ Fields!crops.Value = "Green Beans", "#e8c37d",
 Fields!crops.Value = "Cucumber", "#7dbae8",
 Fields!crops.Value = "Celery", "#7de8d3",
 Fields!crops.Value = "Tomato", "#e8927d",
-Fields!crops.Value = "Coliflower", "#e8927d",
+Fields!crops.Value = "Cauliflower", "#7de8a8",
 Fields!crops.Value = "Bell Pepper", "#e87d7d",
 Fields!crops.Value = "Lettuce", "#897de8",
 True , "Gray"
@@ -6030,7 +6030,6 @@ True , "Gray"
                                       <Value>=Fields!crops.Value</Value>
                                     </SortExpression>
                                   </SortExpressions>
-                                  <Top>0cm</Top>
                                   <Left>0.19667cm</Left>
                                   <Height>2.09153cm</Height>
                                   <Width>19.03265cm</Width>
@@ -6072,7 +6071,6 @@ True , "Gray"
                 </TablixRowHierarchy>
                 <DataSetName>PlantDataSet</DataSetName>
                 <Top>12.76325cm</Top>
-                <Left>0cm</Left>
                 <Height>2.46048cm</Height>
                 <Width>19.27058cm</Width>
                 <ZIndex>5</ZIndex>
@@ -6225,7 +6223,7 @@ Fields!crops.Value = "Green Beans", "#e8c37d",
 Fields!crops.Value = "Cucumber", "#7dbae8",
 Fields!crops.Value = "Celery", "#7de8d3",
 Fields!crops.Value = "Tomato", "#e8927d",
-Fields!crops.Value = "Coliflower", "#e8927d",
+Fields!crops.Value = "Cauliflower", "#7de8a8",
 Fields!crops.Value = "Bell Pepper", "#e87d7d",
 Fields!crops.Value = "Lettuce", "#897de8",
 True , "Gray"
@@ -7036,7 +7034,6 @@ True , "Gray"
                 </TablixRowHierarchy>
                 <DataSetName>HarvestDataSet</DataSetName>
                 <Top>13.6114cm</Top>
-                <Left>0cm</Left>
                 <Height>2.5cm</Height>
                 <Width>19.214cm</Width>
                 <ZIndex>5</ZIndex>
@@ -8049,7 +8046,7 @@ True , "Gray"
                 <Top>2.5cm</Top>
                 <Left>0.22089cm</Left>
                 <Height>3.13935cm</Height>
-                <Width>19.03426cm</Width>
+                <Width>19.03425cm</Width>
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
@@ -8328,6 +8325,10 @@ True , "Gray"
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="locationSelected">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -8353,6 +8354,11 @@ True , "Gray"
           <ColumnIndex>3</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>cropsSelected</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>locationSelected</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
