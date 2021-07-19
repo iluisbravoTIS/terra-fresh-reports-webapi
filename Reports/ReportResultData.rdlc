@@ -224,8 +224,8 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>IncomesDS</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Administrator\source\repos\WebAppReports\Reports\DataSets\IncomesDS.xsd</rd:SchemaPath>
-        <rd:TableName>IncomesResposeDT</rd:TableName>
+        <rd:SchemaPath>C:\Users\Luis Bravo\Documents\Projects\Terra Fresh\terra-fresh-reports-webapi\Reports\DataSets\IncomesDS.xsd</rd:SchemaPath>
+        <rd:TableName>IncomesResposeByCropsDT</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
         <rd:TableAdapterName />
@@ -8264,7 +8264,7 @@ True , "Gray"
                       <Value>=Globals!ExecutionTime</Value>
                       <Style>
                         <FontFamily>segoe ui light</FontFamily>
-                        <Format>dddd, dd' de 'MMMM' de 'yyyy hh:mm:ss tt</Format>
+                        <Format>dddd, dd'  'MMMM'  'yyyy hh:mm:ss tt</Format>
                       </Style>
                     </TextRun>
                   </TextRuns>

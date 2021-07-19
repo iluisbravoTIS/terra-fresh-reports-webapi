@@ -45,6 +45,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.340.80\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
@@ -73,6 +79,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
     <Reference Include="System.Web.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll</HintPath>
     </Reference>
@@ -191,16 +198,28 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ContractsModel.cs" />
     <Compile Include="Models\CropsModel.cs" />
     <Compile Include="Models\DocumentResponseModel.cs" />
     <Compile Include="Models\HarvestResult.cs" />
-    <Compile Include="Models\IncomeCostModel.cs" />
+    <Compile Include="Models\IncomeCostModelByCrops.cs" />
     <Compile Include="Models\LocationModel.cs" />
-    <Compile Include="Models\Model1Request.cs" />
-    <Compile Include="Models\ModelResult.cs" />
+    <Compile Include="Models\Model1\Model1Request.cs" />
+    <Compile Include="Models\Model1\Model1Response.cs" />
+    <Compile Include="Models\Model2ML\Model2MLRequest.cs" />
+    <Compile Include="Models\Model2ML\Model2MLResponse.cs" />
     <Compile Include="Models\OperatorsResult.cs" />
     <Compile Include="Models\PlantResult.cs" />
+    <Compile Include="Models\YieldModel\HarvestWeekExpectedYields.cs" />
+    <Compile Include="Models\YieldModel\PlantingWeekHarvestWeekYields.cs" />
+    <Compile Include="Models\YieldModel\YieldModel.cs" />
+    <Compile Include="Models\YieldModel\YieldModelResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\DataSets\ContractsDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContractsDS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reports\DataSets\CropsToOptimizeDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -221,10 +240,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LaborDS.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Reports\DataSets\LocationsToOptimizeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocationsToOptimizeDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reports\DataSets\PlantDS.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PlantDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DataSets\YieldModelDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YieldModelDS.xsd</DependentUpon>
     </Compile>
     <Compile Include="Services\ReportService.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
@@ -272,6 +301,17 @@
       <DependentUpon>CropsToOptimizeDataSet.xsd</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
+    <Content Include="Reports\DataSets\ContractsDS.xsc">
+      <DependentUpon>ContractsDS.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\DataSets\ContractsDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ContractsDS.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\DataSets\ContractsDS.xss">
+      <DependentUpon>ContractsDS.xsd</DependentUpon>
+    </Content>
     <None Include="Reports\DataSets\CropsToOptimizeDataSet.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -310,6 +350,17 @@
     <Content Include="Reports\DataSets\LaborDS.xss">
       <DependentUpon>LaborDS.xsd</DependentUpon>
     </Content>
+    <Content Include="Reports\DataSets\LocationsToOptimizeDataSet.xsc">
+      <DependentUpon>LocationsToOptimizeDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\DataSets\LocationsToOptimizeDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LocationsToOptimizeDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\DataSets\LocationsToOptimizeDataSet.xss">
+      <DependentUpon>LocationsToOptimizeDataSet.xsd</DependentUpon>
+    </Content>
     <None Include="Reports\DataSets\PlantDS.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -317,6 +368,17 @@
     </None>
     <Content Include="Reports\DataSets\PlantDS.xss">
       <DependentUpon>PlantDS.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\DataSets\YieldModelDS.xsc">
+      <DependentUpon>YieldModelDS.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\DataSets\YieldModelDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YieldModelDS.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\DataSets\YieldModelDS.xss">
+      <DependentUpon>YieldModelDS.xsd</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -386,6 +448,51 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Reports\ReportResultData.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\ScenarioConfiguration.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\EconomicAnalysis.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\ContractHead.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\PlantingDecisions.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\ExpectedHarvesting.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\LaborResult.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\ContractByCrop.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\YieldModelResults.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\YieldModelResultHeatTable.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LocationsToOptimizeDataSet" targetNamespace="http://tempuri.org/LocationsToOptimizeDataSet.xsd" xmlns:mstns="http://tempuri.org/LocationsToOptimizeDataSet.xsd" xmlns="http://tempuri.org/LocationsToOptimizeDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LocationsToOptimizeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="LocationsToOptimizeDataSet" msprop:Generator_UserDSName="LocationsToOptimizeDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LocationsToOptimizeResponseDT" msprop:Generator_TableClassName="LocationsToOptimizeResponseDTDataTable" msprop:Generator_TableVarName="tableLocationsToOptimizeResponseDT" msprop:Generator_TablePropName="LocationsToOptimizeResponseDT" msprop:Generator_RowDeletingName="LocationsToOptimizeResponseDTRowDeleting" msprop:Generator_RowChangingName="LocationsToOptimizeResponseDTRowChanging" msprop:Generator_RowEvHandlerName="LocationsToOptimizeResponseDTRowChangeEventHandler" msprop:Generator_RowDeletedName="LocationsToOptimizeResponseDTRowDeleted" msprop:Generator_UserTableName="LocationsToOptimizeResponseDT" msprop:Generator_RowChangedName="LocationsToOptimizeResponseDTRowChanged" msprop:Generator_RowEvArgName="LocationsToOptimizeResponseDTRowChangeEvent" msprop:Generator_RowClassName="LocationsToOptimizeResponseDTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="location" msprop:Generator_ColumnVarNameInTable="columnlocation" msprop:Generator_ColumnPropNameInRow="location" msprop:Generator_ColumnPropNameInTable="locationColumn" msprop:Generator_UserColumnName="location" type="xs:string" minOccurs="0" />
+              <xs:element name="w" msprop:Generator_ColumnVarNameInTable="columnw" msprop:Generator_ColumnPropNameInRow="w" msprop:Generator_ColumnPropNameInTable="wColumn" msprop:Generator_UserColumnName="w" type="xs:string" minOccurs="0" />
+              <xs:element name="clabor" msprop:Generator_ColumnVarNameInTable="columnclabor" msprop:Generator_ColumnPropNameInRow="clabor" msprop:Generator_ColumnPropNameInTable="claborColumn" msprop:Generator_UserColumnName="clabor" type="xs:string" minOccurs="0" />
+              <xs:element name="chire" msprop:Generator_ColumnVarNameInTable="columnchire" msprop:Generator_ColumnPropNameInRow="chire" msprop:Generator_ColumnPropNameInTable="chireColumn" msprop:Generator_UserColumnName="chire" type="xs:string" minOccurs="0" />
+              <xs:element name="mtemp" msprop:Generator_ColumnVarNameInTable="columnmtemp" msprop:Generator_ColumnPropNameInRow="mtemp" msprop:Generator_ColumnPropNameInTable="mtempColumn" msprop:Generator_UserColumnName="mtemp" type="xs:string" minOccurs="0" />
+              <xs:element name="mfix" msprop:Generator_ColumnVarNameInTable="columnmfix" msprop:Generator_ColumnPropNameInRow="mfix" msprop:Generator_ColumnPropNameInTable="mfixColumn" msprop:Generator_UserColumnName="mfix" type="xs:string" minOccurs="0" />
+              <xs:element name="maxi" msprop:Generator_ColumnVarNameInTable="columnmaxi" msprop:Generator_ColumnPropNameInRow="maxi" msprop:Generator_ColumnPropNameInTable="maxiColumn" msprop:Generator_UserColumnName="maxi" type="xs:string" minOccurs="0" />
+              <xs:element name="ctemp" msprop:Generator_ColumnVarNameInTable="columnctemp" msprop:Generator_ColumnPropNameInRow="ctemp" msprop:Generator_ColumnPropNameInTable="ctempColumn" msprop:Generator_UserColumnName="ctemp" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -24,7 +24,7 @@ namespace WebAppReports.Reports.DataSets {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class CropsToOptimizeDataSet : global::System.Data.DataSet {
         
-        private CropsToOptimizeResponseDTDataTable tableCropsToOptimizeResponseDT;
+        private LandAvailableDTDataTable tableLandAvailableDT;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace WebAppReports.Reports.DataSets {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["CropsToOptimizeResponseDT"] != null)) {
-                    base.Tables.Add(new CropsToOptimizeResponseDTDataTable(ds.Tables["CropsToOptimizeResponseDT"]));
+                if ((ds.Tables["LandAvailableDT"] != null)) {
+                    base.Tables.Add(new LandAvailableDTDataTable(ds.Tables["LandAvailableDT"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace WebAppReports.Reports.DataSets {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public CropsToOptimizeResponseDTDataTable CropsToOptimizeResponseDT {
+        public LandAvailableDTDataTable LandAvailableDT {
             get {
-                return this.tableCropsToOptimizeResponseDT;
+                return this.tableLandAvailableDT;
             }
         }
         
@@ -152,8 +152,8 @@ namespace WebAppReports.Reports.DataSets {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["CropsToOptimizeResponseDT"] != null)) {
-                    base.Tables.Add(new CropsToOptimizeResponseDTDataTable(ds.Tables["CropsToOptimizeResponseDT"]));
+                if ((ds.Tables["LandAvailableDT"] != null)) {
+                    base.Tables.Add(new LandAvailableDTDataTable(ds.Tables["LandAvailableDT"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace WebAppReports.Reports.DataSets {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableCropsToOptimizeResponseDT = ((CropsToOptimizeResponseDTDataTable)(base.Tables["CropsToOptimizeResponseDT"]));
+            this.tableLandAvailableDT = ((LandAvailableDTDataTable)(base.Tables["LandAvailableDT"]));
             if ((initTable == true)) {
-                if ((this.tableCropsToOptimizeResponseDT != null)) {
-                    this.tableCropsToOptimizeResponseDT.InitVars();
+                if ((this.tableLandAvailableDT != null)) {
+                    this.tableLandAvailableDT.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace WebAppReports.Reports.DataSets {
             this.Namespace = "http://tempuri.org/CropsToOptimizeDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableCropsToOptimizeResponseDT = new CropsToOptimizeResponseDTDataTable();
-            base.Tables.Add(this.tableCropsToOptimizeResponseDT);
+            this.tableLandAvailableDT = new LandAvailableDTDataTable();
+            base.Tables.Add(this.tableLandAvailableDT);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeCropsToOptimizeResponseDT() {
+        private bool ShouldSerializeLandAvailableDT() {
             return false;
         }
         
@@ -270,39 +270,23 @@ namespace WebAppReports.Reports.DataSets {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void CropsToOptimizeResponseDTRowChangeEventHandler(object sender, CropsToOptimizeResponseDTRowChangeEvent e);
+        public delegate void LandAvailableDTRowChangeEventHandler(object sender, LandAvailableDTRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class CropsToOptimizeResponseDTDataTable : global::System.Data.TypedTableBase<CropsToOptimizeResponseDTRow> {
+        public partial class LandAvailableDTDataTable : global::System.Data.TypedTableBase<LandAvailableDTRow> {
             
-            private global::System.Data.DataColumn columnccrop;
+            private global::System.Data.DataColumn columnland;
             
-            private global::System.Data.DataColumn columncplant;
-            
-            private global::System.Data.DataColumn columncrop;
-            
-            private global::System.Data.DataColumn columndharv;
-            
-            private global::System.Data.DataColumn columnlabh;
-            
-            private global::System.Data.DataColumn columnlabp;
-            
-            private global::System.Data.DataColumn columnmaxl;
-            
-            private global::System.Data.DataColumn columnminl;
-            
-            private global::System.Data.DataColumn columnpslav;
-            
-            private global::System.Data.DataColumn columnwater;
+            private global::System.Data.DataColumn columnlocation;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public CropsToOptimizeResponseDTDataTable() {
-                this.TableName = "CropsToOptimizeResponseDT";
+            public LandAvailableDTDataTable() {
+                this.TableName = "LandAvailableDT";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -310,7 +294,7 @@ namespace WebAppReports.Reports.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal CropsToOptimizeResponseDTDataTable(global::System.Data.DataTable table) {
+            internal LandAvailableDTDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -327,88 +311,24 @@ namespace WebAppReports.Reports.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected CropsToOptimizeResponseDTDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected LandAvailableDTDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn ccropColumn {
+            public global::System.Data.DataColumn landColumn {
                 get {
-                    return this.columnccrop;
+                    return this.columnland;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn cplantColumn {
+            public global::System.Data.DataColumn locationColumn {
                 get {
-                    return this.columncplant;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn cropColumn {
-                get {
-                    return this.columncrop;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn dharvColumn {
-                get {
-                    return this.columndharv;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn labhColumn {
-                get {
-                    return this.columnlabh;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn labpColumn {
-                get {
-                    return this.columnlabp;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn maxlColumn {
-                get {
-                    return this.columnmaxl;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn minlColumn {
-                get {
-                    return this.columnminl;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn pslavColumn {
-                get {
-                    return this.columnpslav;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn waterColumn {
-                get {
-                    return this.columnwater;
+                    return this.columnlocation;
                 }
             }
             
@@ -423,54 +343,46 @@ namespace WebAppReports.Reports.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public CropsToOptimizeResponseDTRow this[int index] {
+            public LandAvailableDTRow this[int index] {
                 get {
-                    return ((CropsToOptimizeResponseDTRow)(this.Rows[index]));
+                    return ((LandAvailableDTRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event CropsToOptimizeResponseDTRowChangeEventHandler CropsToOptimizeResponseDTRowChanging;
+            public event LandAvailableDTRowChangeEventHandler LandAvailableDTRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event CropsToOptimizeResponseDTRowChangeEventHandler CropsToOptimizeResponseDTRowChanged;
+            public event LandAvailableDTRowChangeEventHandler LandAvailableDTRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event CropsToOptimizeResponseDTRowChangeEventHandler CropsToOptimizeResponseDTRowDeleting;
+            public event LandAvailableDTRowChangeEventHandler LandAvailableDTRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event CropsToOptimizeResponseDTRowChangeEventHandler CropsToOptimizeResponseDTRowDeleted;
+            public event LandAvailableDTRowChangeEventHandler LandAvailableDTRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddCropsToOptimizeResponseDTRow(CropsToOptimizeResponseDTRow row) {
+            public void AddLandAvailableDTRow(LandAvailableDTRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public CropsToOptimizeResponseDTRow AddCropsToOptimizeResponseDTRow(string ccrop, string cplant, string crop, string dharv, string labh, string labp, string maxl, string minl, string pslav, string water) {
-                CropsToOptimizeResponseDTRow rowCropsToOptimizeResponseDTRow = ((CropsToOptimizeResponseDTRow)(this.NewRow()));
+            public LandAvailableDTRow AddLandAvailableDTRow(string land, string location) {
+                LandAvailableDTRow rowLandAvailableDTRow = ((LandAvailableDTRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        ccrop,
-                        cplant,
-                        crop,
-                        dharv,
-                        labh,
-                        labp,
-                        maxl,
-                        minl,
-                        pslav,
-                        water};
-                rowCropsToOptimizeResponseDTRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowCropsToOptimizeResponseDTRow);
-                return rowCropsToOptimizeResponseDTRow;
+                        land,
+                        location};
+                rowLandAvailableDTRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowLandAvailableDTRow);
+                return rowLandAvailableDTRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                CropsToOptimizeResponseDTDataTable cln = ((CropsToOptimizeResponseDTDataTable)(base.Clone()));
+                LandAvailableDTDataTable cln = ((LandAvailableDTDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -478,73 +390,49 @@ namespace WebAppReports.Reports.DataSets {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new CropsToOptimizeResponseDTDataTable();
+                return new LandAvailableDTDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnccrop = base.Columns["ccrop"];
-                this.columncplant = base.Columns["cplant"];
-                this.columncrop = base.Columns["crop"];
-                this.columndharv = base.Columns["dharv"];
-                this.columnlabh = base.Columns["labh"];
-                this.columnlabp = base.Columns["labp"];
-                this.columnmaxl = base.Columns["maxl"];
-                this.columnminl = base.Columns["minl"];
-                this.columnpslav = base.Columns["pslav"];
-                this.columnwater = base.Columns["water"];
+                this.columnland = base.Columns["land"];
+                this.columnlocation = base.Columns["location"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnccrop = new global::System.Data.DataColumn("ccrop", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnccrop);
-                this.columncplant = new global::System.Data.DataColumn("cplant", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncplant);
-                this.columncrop = new global::System.Data.DataColumn("crop", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncrop);
-                this.columndharv = new global::System.Data.DataColumn("dharv", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndharv);
-                this.columnlabh = new global::System.Data.DataColumn("labh", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnlabh);
-                this.columnlabp = new global::System.Data.DataColumn("labp", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnlabp);
-                this.columnmaxl = new global::System.Data.DataColumn("maxl", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnmaxl);
-                this.columnminl = new global::System.Data.DataColumn("minl", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnminl);
-                this.columnpslav = new global::System.Data.DataColumn("pslav", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnpslav);
-                this.columnwater = new global::System.Data.DataColumn("water", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnwater);
+                this.columnland = new global::System.Data.DataColumn("land", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnland);
+                this.columnlocation = new global::System.Data.DataColumn("location", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnlocation);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public CropsToOptimizeResponseDTRow NewCropsToOptimizeResponseDTRow() {
-                return ((CropsToOptimizeResponseDTRow)(this.NewRow()));
+            public LandAvailableDTRow NewLandAvailableDTRow() {
+                return ((LandAvailableDTRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new CropsToOptimizeResponseDTRow(builder);
+                return new LandAvailableDTRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(CropsToOptimizeResponseDTRow);
+                return typeof(LandAvailableDTRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.CropsToOptimizeResponseDTRowChanged != null)) {
-                    this.CropsToOptimizeResponseDTRowChanged(this, new CropsToOptimizeResponseDTRowChangeEvent(((CropsToOptimizeResponseDTRow)(e.Row)), e.Action));
+                if ((this.LandAvailableDTRowChanged != null)) {
+                    this.LandAvailableDTRowChanged(this, new LandAvailableDTRowChangeEvent(((LandAvailableDTRow)(e.Row)), e.Action));
                 }
             }
             
@@ -552,8 +440,8 @@ namespace WebAppReports.Reports.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.CropsToOptimizeResponseDTRowChanging != null)) {
-                    this.CropsToOptimizeResponseDTRowChanging(this, new CropsToOptimizeResponseDTRowChangeEvent(((CropsToOptimizeResponseDTRow)(e.Row)), e.Action));
+                if ((this.LandAvailableDTRowChanging != null)) {
+                    this.LandAvailableDTRowChanging(this, new LandAvailableDTRowChangeEvent(((LandAvailableDTRow)(e.Row)), e.Action));
                 }
             }
             
@@ -561,8 +449,8 @@ namespace WebAppReports.Reports.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.CropsToOptimizeResponseDTRowDeleted != null)) {
-                    this.CropsToOptimizeResponseDTRowDeleted(this, new CropsToOptimizeResponseDTRowChangeEvent(((CropsToOptimizeResponseDTRow)(e.Row)), e.Action));
+                if ((this.LandAvailableDTRowDeleted != null)) {
+                    this.LandAvailableDTRowDeleted(this, new LandAvailableDTRowChangeEvent(((LandAvailableDTRow)(e.Row)), e.Action));
                 }
             }
             
@@ -570,14 +458,14 @@ namespace WebAppReports.Reports.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.CropsToOptimizeResponseDTRowDeleting != null)) {
-                    this.CropsToOptimizeResponseDTRowDeleting(this, new CropsToOptimizeResponseDTRowChangeEvent(((CropsToOptimizeResponseDTRow)(e.Row)), e.Action));
+                if ((this.LandAvailableDTRowDeleting != null)) {
+                    this.LandAvailableDTRowDeleting(this, new LandAvailableDTRowChangeEvent(((LandAvailableDTRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveCropsToOptimizeResponseDTRow(CropsToOptimizeResponseDTRow row) {
+            public void RemoveLandAvailableDTRow(LandAvailableDTRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -604,7 +492,7 @@ namespace WebAppReports.Reports.DataSets {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "CropsToOptimizeResponseDTDataTable";
+                attribute2.FixedValue = "LandAvailableDTDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -648,300 +536,71 @@ namespace WebAppReports.Reports.DataSets {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class CropsToOptimizeResponseDTRow : global::System.Data.DataRow {
+        public partial class LandAvailableDTRow : global::System.Data.DataRow {
             
-            private CropsToOptimizeResponseDTDataTable tableCropsToOptimizeResponseDT;
+            private LandAvailableDTDataTable tableLandAvailableDT;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal CropsToOptimizeResponseDTRow(global::System.Data.DataRowBuilder rb) : 
+            internal LandAvailableDTRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableCropsToOptimizeResponseDT = ((CropsToOptimizeResponseDTDataTable)(this.Table));
+                this.tableLandAvailableDT = ((LandAvailableDTDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string ccrop {
+            public string land {
                 get {
                     try {
-                        return ((string)(this[this.tableCropsToOptimizeResponseDT.ccropColumn]));
+                        return ((string)(this[this.tableLandAvailableDT.landColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ccrop\' de la tabla \'CropsToOptimizeResponseDT\' es DBNull." +
-                                "", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'land\' de la tabla \'LandAvailableDT\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCropsToOptimizeResponseDT.ccropColumn] = value;
+                    this[this.tableLandAvailableDT.landColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string cplant {
+            public string location {
                 get {
                     try {
-                        return ((string)(this[this.tableCropsToOptimizeResponseDT.cplantColumn]));
+                        return ((string)(this[this.tableLandAvailableDT.locationColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'cplant\' de la tabla \'CropsToOptimizeResponseDT\' es DBNull" +
-                                ".", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'location\' de la tabla \'LandAvailableDT\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCropsToOptimizeResponseDT.cplantColumn] = value;
+                    this[this.tableLandAvailableDT.locationColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string crop {
-                get {
-                    try {
-                        return ((string)(this[this.tableCropsToOptimizeResponseDT.cropColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'crop\' de la tabla \'CropsToOptimizeResponseDT\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableCropsToOptimizeResponseDT.cropColumn] = value;
-                }
+            public bool IslandNull() {
+                return this.IsNull(this.tableLandAvailableDT.landColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string dharv {
-                get {
-                    try {
-                        return ((string)(this[this.tableCropsToOptimizeResponseDT.dharvColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'dharv\' de la tabla \'CropsToOptimizeResponseDT\' es DBNull." +
-                                "", e);
-                    }
-                }
-                set {
-                    this[this.tableCropsToOptimizeResponseDT.dharvColumn] = value;
-                }
+            public void SetlandNull() {
+                this[this.tableLandAvailableDT.landColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string labh {
-                get {
-                    try {
-                        return ((string)(this[this.tableCropsToOptimizeResponseDT.labhColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'labh\' de la tabla \'CropsToOptimizeResponseDT\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableCropsToOptimizeResponseDT.labhColumn] = value;
-                }
+            public bool IslocationNull() {
+                return this.IsNull(this.tableLandAvailableDT.locationColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string labp {
-                get {
-                    try {
-                        return ((string)(this[this.tableCropsToOptimizeResponseDT.labpColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'labp\' de la tabla \'CropsToOptimizeResponseDT\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableCropsToOptimizeResponseDT.labpColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string maxl {
-                get {
-                    try {
-                        return ((string)(this[this.tableCropsToOptimizeResponseDT.maxlColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'maxl\' de la tabla \'CropsToOptimizeResponseDT\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableCropsToOptimizeResponseDT.maxlColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string minl {
-                get {
-                    try {
-                        return ((string)(this[this.tableCropsToOptimizeResponseDT.minlColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'minl\' de la tabla \'CropsToOptimizeResponseDT\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableCropsToOptimizeResponseDT.minlColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string pslav {
-                get {
-                    try {
-                        return ((string)(this[this.tableCropsToOptimizeResponseDT.pslavColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'pslav\' de la tabla \'CropsToOptimizeResponseDT\' es DBNull." +
-                                "", e);
-                    }
-                }
-                set {
-                    this[this.tableCropsToOptimizeResponseDT.pslavColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string water {
-                get {
-                    try {
-                        return ((string)(this[this.tableCropsToOptimizeResponseDT.waterColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'water\' de la tabla \'CropsToOptimizeResponseDT\' es DBNull." +
-                                "", e);
-                    }
-                }
-                set {
-                    this[this.tableCropsToOptimizeResponseDT.waterColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsccropNull() {
-                return this.IsNull(this.tableCropsToOptimizeResponseDT.ccropColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetccropNull() {
-                this[this.tableCropsToOptimizeResponseDT.ccropColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IscplantNull() {
-                return this.IsNull(this.tableCropsToOptimizeResponseDT.cplantColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetcplantNull() {
-                this[this.tableCropsToOptimizeResponseDT.cplantColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IscropNull() {
-                return this.IsNull(this.tableCropsToOptimizeResponseDT.cropColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetcropNull() {
-                this[this.tableCropsToOptimizeResponseDT.cropColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsdharvNull() {
-                return this.IsNull(this.tableCropsToOptimizeResponseDT.dharvColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetdharvNull() {
-                this[this.tableCropsToOptimizeResponseDT.dharvColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IslabhNull() {
-                return this.IsNull(this.tableCropsToOptimizeResponseDT.labhColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetlabhNull() {
-                this[this.tableCropsToOptimizeResponseDT.labhColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IslabpNull() {
-                return this.IsNull(this.tableCropsToOptimizeResponseDT.labpColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetlabpNull() {
-                this[this.tableCropsToOptimizeResponseDT.labpColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsmaxlNull() {
-                return this.IsNull(this.tableCropsToOptimizeResponseDT.maxlColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetmaxlNull() {
-                this[this.tableCropsToOptimizeResponseDT.maxlColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsminlNull() {
-                return this.IsNull(this.tableCropsToOptimizeResponseDT.minlColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetminlNull() {
-                this[this.tableCropsToOptimizeResponseDT.minlColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IspslavNull() {
-                return this.IsNull(this.tableCropsToOptimizeResponseDT.pslavColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetpslavNull() {
-                this[this.tableCropsToOptimizeResponseDT.pslavColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IswaterNull() {
-                return this.IsNull(this.tableCropsToOptimizeResponseDT.waterColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetwaterNull() {
-                this[this.tableCropsToOptimizeResponseDT.waterColumn] = global::System.Convert.DBNull;
+            public void SetlocationNull() {
+                this[this.tableLandAvailableDT.locationColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -949,22 +608,22 @@ namespace WebAppReports.Reports.DataSets {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class CropsToOptimizeResponseDTRowChangeEvent : global::System.EventArgs {
+        public class LandAvailableDTRowChangeEvent : global::System.EventArgs {
             
-            private CropsToOptimizeResponseDTRow eventRow;
+            private LandAvailableDTRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public CropsToOptimizeResponseDTRowChangeEvent(CropsToOptimizeResponseDTRow row, global::System.Data.DataRowAction action) {
+            public LandAvailableDTRowChangeEvent(LandAvailableDTRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public CropsToOptimizeResponseDTRow Row {
+            public LandAvailableDTRow Row {
                 get {
                     return this.eventRow;
                 }

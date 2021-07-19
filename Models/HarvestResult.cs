@@ -20,5 +20,6 @@ namespace WebAppReports.Models
         public string dateRange { get; set; }
         public string dateInit { get; set; }
         public double pounds { get; set; }
+        public string location { get; set; }
     }
 }

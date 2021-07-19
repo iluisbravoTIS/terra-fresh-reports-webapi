@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CropsToOptimizeDataSet" targetNamespace="http://tempuri.org/CropsToOptimizeDataSet.xsd" xmlns:mstns="http://tempuri.org/CropsToOptimizeDataSet.xsd" xmlns="http://tempuri.org/CropsToOptimizeDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CropsToOptimizeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CropsToOptimizeDataSet" msprop:Generator_UserDSName="CropsToOptimizeDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LandAvailableDT" msprop:Generator_TableClassName="LandAvailableDTDataTable" msprop:Generator_TableVarName="tableLandAvailableDT" msprop:Generator_RowChangedName="LandAvailableDTRowChanged" msprop:Generator_TablePropName="LandAvailableDT" msprop:Generator_RowDeletingName="LandAvailableDTRowDeleting" msprop:Generator_RowChangingName="LandAvailableDTRowChanging" msprop:Generator_RowEvHandlerName="LandAvailableDTRowChangeEventHandler" msprop:Generator_RowDeletedName="LandAvailableDTRowDeleted" msprop:Generator_RowClassName="LandAvailableDTRow" msprop:Generator_UserTableName="LandAvailableDT" msprop:Generator_RowEvArgName="LandAvailableDTRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="land" msprop:Generator_ColumnVarNameInTable="columnland" msprop:Generator_ColumnPropNameInRow="land" msprop:Generator_ColumnPropNameInTable="landColumn" msprop:Generator_UserColumnName="land" type="xs:string" minOccurs="0" />
+              <xs:element name="location" msprop:Generator_ColumnVarNameInTable="columnlocation" msprop:Generator_ColumnPropNameInRow="location" msprop:Generator_ColumnPropNameInTable="locationColumn" msprop:Generator_UserColumnName="location" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

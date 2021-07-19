@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ContractsDS" targetNamespace="http://tempuri.org/ContractsDS.xsd" xmlns:mstns="http://tempuri.org/ContractsDS.xsd" xmlns="http://tempuri.org/ContractsDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ContractsDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ContractsDS" msprop:Generator_UserDSName="ContractsDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LandAvailableDT" msprop:Generator_TableClassName="LandAvailableDTDataTable" msprop:Generator_TableVarName="tableLandAvailableDT" msprop:Generator_RowChangedName="LandAvailableDTRowChanged" msprop:Generator_TablePropName="LandAvailableDT" msprop:Generator_RowDeletingName="LandAvailableDTRowDeleting" msprop:Generator_RowChangingName="LandAvailableDTRowChanging" msprop:Generator_RowEvHandlerName="LandAvailableDTRowChangeEventHandler" msprop:Generator_RowDeletedName="LandAvailableDTRowDeleted" msprop:Generator_RowClassName="LandAvailableDTRow" msprop:Generator_UserTableName="LandAvailableDT" msprop:Generator_RowEvArgName="LandAvailableDTRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="land" msprop:Generator_ColumnVarNameInTable="columnland" msprop:Generator_ColumnPropNameInRow="land" msprop:Generator_ColumnPropNameInTable="landColumn" msprop:Generator_UserColumnName="land" type="xs:string" minOccurs="0" />
+              <xs:element name="location" msprop:Generator_ColumnVarNameInTable="columnlocation" msprop:Generator_ColumnPropNameInRow="location" msprop:Generator_ColumnPropNameInTable="locationColumn" msprop:Generator_UserColumnName="location" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ContractForCropByLocationsDT" msprop:Generator_TableClassName="ContractForCropByLocationsDTDataTable" msprop:Generator_TableVarName="tableContractForCropByLocationsDT" msprop:Generator_TablePropName="ContractForCropByLocationsDT" msprop:Generator_RowDeletingName="ContractForCropByLocationsDTRowDeleting" msprop:Generator_RowChangingName="ContractForCropByLocationsDTRowChanging" msprop:Generator_RowEvHandlerName="ContractForCropByLocationsDTRowChangeEventHandler" msprop:Generator_RowDeletedName="ContractForCropByLocationsDTRowDeleted" msprop:Generator_UserTableName="ContractForCropByLocationsDT" msprop:Generator_RowChangedName="ContractForCropByLocationsDTRowChanged" msprop:Generator_RowEvArgName="ContractForCropByLocationsDTRowChangeEvent" msprop:Generator_RowClassName="ContractForCropByLocationsDTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Demand" msprop:Generator_ColumnVarNameInTable="columnDemand" msprop:Generator_ColumnPropNameInRow="Demand" msprop:Generator_ColumnPropNameInTable="DemandColumn" msprop:Generator_UserColumnName="Demand" type="xs:string" minOccurs="0" />
+              <xs:element name="Spot" msprop:Generator_ColumnVarNameInTable="columnSpot" msprop:Generator_ColumnPropNameInRow="Spot" msprop:Generator_ColumnPropNameInTable="SpotColumn" msprop:Generator_UserColumnName="Spot" type="xs:string" minOccurs="0" />
+              <xs:element name="Phoenix_x002C__x0020_AZ" msprop:Generator_ColumnVarNameInTable="_columnPhoenix__AZ" msprop:Generator_ColumnPropNameInRow="_Phoenix__AZ" msprop:Generator_ColumnPropNameInTable="_Phoenix__AZColumn" msprop:Generator_UserColumnName="Phoenix, AZ" type="xs:string" minOccurs="0" />
+              <xs:element name="Tucson_x002C__x0020_AZ" msprop:Generator_ColumnVarNameInTable="_columnTucson__AZ" msprop:Generator_ColumnPropNameInRow="_Tucson__AZ" msprop:Generator_ColumnPropNameInTable="_Tucson__AZColumn" msprop:Generator_UserColumnName="Tucson, AZ" type="xs:string" minOccurs="0" />
+              <xs:element name="Yuma_x002C__x0020_AZ" msprop:Generator_ColumnVarNameInTable="_columnYuma__AZ" msprop:Generator_ColumnPropNameInRow="_Yuma__AZ" msprop:Generator_ColumnPropNameInTable="_Yuma__AZColumn" msprop:Generator_UserColumnName="Yuma, AZ" type="xs:string" minOccurs="0" />
+              <xs:element name="Las_x0020_Cruces_x002C__x0020_NM" msprop:Generator_ColumnVarNameInTable="_columnLas_Cruces__NM" msprop:Generator_ColumnPropNameInRow="_Las_Cruces__NM" msprop:Generator_ColumnPropNameInTable="_Las_Cruces__NMColumn" msprop:Generator_UserColumnName="Las Cruces, NM" type="xs:string" minOccurs="0" />
+              <xs:element name="Albuquerque_x002C__x0020_NM" msprop:Generator_ColumnVarNameInTable="_columnAlbuquerque__NM" msprop:Generator_ColumnPropNameInRow="_Albuquerque__NM" msprop:Generator_ColumnPropNameInTable="_Albuquerque__NMColumn" msprop:Generator_UserColumnName="Albuquerque, NM" type="xs:string" minOccurs="0" />
+              <xs:element name="Aspen_x002C__x0020_CO" msprop:Generator_ColumnVarNameInTable="_columnAspen__CO" msprop:Generator_ColumnPropNameInRow="_Aspen__CO" msprop:Generator_ColumnPropNameInTable="_Aspen__COColumn" msprop:Generator_UserColumnName="Aspen, CO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ContractByLocationsDT" msprop:Generator_TableClassName="ContractByLocationsDTDataTable" msprop:Generator_TableVarName="tableContractByLocationsDT" msprop:Generator_TablePropName="ContractByLocationsDT" msprop:Generator_RowDeletingName="ContractByLocationsDTRowDeleting" msprop:Generator_RowChangingName="ContractByLocationsDTRowChanging" msprop:Generator_RowEvHandlerName="ContractByLocationsDTRowChangeEventHandler" msprop:Generator_RowDeletedName="ContractByLocationsDTRowDeleted" msprop:Generator_UserTableName="ContractByLocationsDT" msprop:Generator_RowChangedName="ContractByLocationsDTRowChanged" msprop:Generator_RowEvArgName="ContractByLocationsDTRowChangeEvent" msprop:Generator_RowClassName="ContractByLocationsDTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="location" msprop:Generator_ColumnVarNameInTable="columnlocation" msprop:Generator_ColumnPropNameInRow="location" msprop:Generator_ColumnPropNameInTable="locationColumn" msprop:Generator_UserColumnName="location" type="xs:string" minOccurs="0" />
+              <xs:element name="data" msprop:Generator_ColumnVarNameInTable="columndata" msprop:Generator_ColumnPropNameInRow="data" msprop:Generator_ColumnPropNameInTable="dataColumn" msprop:Generator_UserColumnName="data" type="xs:string" minOccurs="0" />
+              <xs:element name="week" msprop:Generator_ColumnVarNameInTable="columnweek" msprop:Generator_ColumnPropNameInRow="week" msprop:Generator_ColumnPropNameInTable="weekColumn" msprop:Generator_UserColumnName="week" type="xs:string" minOccurs="0" />
+              <xs:element name="spot" msprop:Generator_ColumnVarNameInTable="columnspot" msprop:Generator_ColumnPropNameInRow="spot" msprop:Generator_ColumnPropNameInTable="spotColumn" msprop:Generator_UserColumnName="spot" type="xs:string" minOccurs="0" />
+              <xs:element name="demand" msprop:Generator_ColumnVarNameInTable="columndemand" msprop:Generator_ColumnPropNameInRow="demand" msprop:Generator_ColumnPropNameInTable="demandColumn" msprop:Generator_UserColumnName="demand" type="xs:string" minOccurs="0" />
+              <xs:element name="dateInit" msprop:Generator_ColumnVarNameInTable="columndateInit" msprop:Generator_ColumnPropNameInRow="dateInit" msprop:Generator_ColumnPropNameInTable="dateInitColumn" msprop:Generator_UserColumnName="dateInit" type="xs:string" minOccurs="0" />
+              <xs:element name="dateRange" msprop:Generator_ColumnVarNameInTable="columndateRange" msprop:Generator_ColumnPropNameInRow="dateRange" msprop:Generator_ColumnPropNameInTable="dateRangeColumn" msprop:Generator_UserColumnName="dateRange" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

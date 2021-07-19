@@ -63,6 +63,7 @@ namespace WebAppReports.Models
         public string dateInit { get; set; }
         public int labors { get; set; }
         public string laborType { get; set; }
+        public string location { get; set; }
     }
 
     public class LaborRequirementSummaryResponse
@@ -75,6 +76,7 @@ namespace WebAppReports.Models
         public double permanentLaborAvailable { get; set; }
         public double temporaryLaborHired { get; set; }
         public double totalLaborAvailable { get; set; }
+        public string location { get; set; }
 
     }
 }

@@ -12,5 +12,10 @@ namespace WebAppReports.Models
         public bool hasError { get; set; }
         public string messageError { get; set; }
         public ActionResult document { get; set; }
+
+        //public static implicit operator DocumentResponseModel(DocumentResponseModel v)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
